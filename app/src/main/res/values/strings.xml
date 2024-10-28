@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Patrones</string>
+    <string name="slogan">Que ser sociable no signifique hacer filas!</string>
+    <string name="registrarme">Registrarme</string>
+    <string name="ya_tengo_cuenta">Ya tengo cuenta</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasena">Password</string>
+    <string name="login">LogIn</string>
+    <string name="no_tengo_cuenta">no tengo cuenta</string>
+    <string name="no_description">no description</string>
+    <string name="hint_search_event">Which event do you attend?</string>
+
+</resources>

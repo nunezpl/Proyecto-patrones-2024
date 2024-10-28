@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/inicio_sesion_logo"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/inicio_sesion_username_card"
+        android:layout_width="344dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="95dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inicio_sesion_logo">
+
+        <EditText
+            android:id="@+id/inicio_sesion_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingBottom="0dp"
+            android:backgroundTint="@color/white"
+            android:hint="@string/usuario"
+            android:inputType="textEmailAddress"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/inicio_sesion_password_card"
+        android:layout_width="344dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inicio_sesion_username_card">
+
+        <EditText
+            android:id="@+id/inicio_sesion_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingBottom="0dp"
+            android:backgroundTint="@color/white"
+            android:hint="@string/contrasena"
+            android:inputType="textPassword"
+            android:paddingTop="10dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+        </EditText>
+
+        <ImageView
+            android:id="@+id/imageview_ShowPs"
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="300dp"
+            ></ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/inicio_sesion_login_button"
+        android:layout_width="344dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:paddingTop="10dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/login"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inicio_sesion_password_card" />
+
+
+    <Button
+        android:id="@+id/ya_tengo_cuenta"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/blue"
+        android:text="@string/no_tengo_cuenta"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inicio_sesion_login_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
