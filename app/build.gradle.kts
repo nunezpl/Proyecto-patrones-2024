@@ -49,6 +49,9 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel:2.5.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0")
 
+    // Dependencia de MPAndroidChart para las gráficas
+    implementation ("com.github.PhilJay:MPAndroidChart:v3.1.0")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

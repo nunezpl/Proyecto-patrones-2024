@@ -21,8 +21,12 @@ class UsuarioActivity : AppCompatActivity() {
 
         // Inicializar listas de eventos y alojamientos
         val eventos = listOf(
-            Evento("Concierto de la esperanza", "Sept 20", R.drawable.evento1),
-            Evento("Concierto Enanitos verdes", "Ago 31", R.drawable.evento2)
+            Evento("Concierto de la esperanza", "Sept 20 2024", "Movistar arena", R.drawable.evento1),
+            Evento("Concierto Enanitos verdes", "Oct 31 2024", "Campin", R.drawable.evento2),
+            Evento("Festival de Jazz", "Nov 15 2024", "Teatro Colón", R.drawable.evento1),
+            Evento("Rock al Parque", "Dec 1 2024", "Simón Bolívar", R.drawable.evento2),
+            Evento("Feria del Libro", "Apr 20 2025", "Corferias", R.drawable.evento1),
+            Evento("Exposición de Arte", "May 5 2025", "Museo Nacional", R.drawable.evento2)
         )
 
         val alojamientos = listOf(
@@ -31,7 +35,7 @@ class UsuarioActivity : AppCompatActivity() {
         )
 
         // Configurar los adapters
-        eventoAdapter = EventoAdapter(eventos)
+        eventoAdapter = EventoAdapter(this, eventos)
         alojamientoAdapter = AlojamientoAdapter(alojamientos)
 
         binding.recyclerEventos.layoutManager = LinearLayoutManager(this)

@@ -9,5 +9,18 @@
     <string name="no_tengo_cuenta">no tengo cuenta</string>
     <string name="no_description">no description</string>
     <string name="hint_search_event">Which event do you attend?</string>
+    <string name="location">Location</string>
+    <string name="dates">Date</string>
+    <string name="guests">Guests</string>
+    <string name="menos">-</string>
+    <string name="mas">+</string>
+    <string name="how_many_guests">How many guests?</string>
+    <string name="token">Token</string>
+    <string name="ejemplo_date">Septiembre 20, 2024</string>
+    <string name="time">Time</string>
+    <string name="ejemplo_time">05:40 PM</string>
+    <string name="place">Lugar</string>
+    <string name="ejemplo_lugar">Movistar arena</string>
+    <string name="asistir">Asistir</string>
 
 </resources>
